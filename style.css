@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <button>Hover Me!</button>
-</body>
-</html>
+body{
+    background-color: rgb(7, 1, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+button{
+    /* display: inline-block; */
+    cursor: pointer;
+    /* display: inline; */
+    height: 55px;
+    width: 165px;
+    border: 2px rgb(255, 136, 0) solid;
+    background-color: rgb(7, 1, 20);
+    color: rgb(255, 136, 0);
+    border-radius: 2px;
+    font-weight: lighter;
+    transition: all 0.25s;
+    font-size: large;
+}
+
+button:hover{
+    box-shadow: 0px 0.5em 0.5em -0.4em yellow;
+    border: 2px yellow solid;
+    color: white;
+    transform: translate(0px, -2px);
+    border-radius: 2px;
+}
